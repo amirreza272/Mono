@@ -1,2 +1,0 @@
-# Mono
-Mono cafe - Urmia
