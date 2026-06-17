@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;900&display=swap');
+
+:root {
+    --bg-color: #0b0c10;
+    --surface-color: #1f2833;
+    --accent-color: #c5a880;
+    --accent-gold: #c5a880;
+    --text-main: #ffffff;
+    --text-muted: #c5c5c5;
+    --neon-glow: 0 0 10px rgba(197, 168, 128, 0.6), 0 0 20px rgba(197, 168, 128, 0.4);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--text-main);
+    letter-spacing: 1px;
+    text-shadow: var(--neon-glow);
+}
+
+header p {
+    color: var(--accent-gold);
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* بهینه‌سازی برای تبلت */
+@media (max-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* چیدمان کاملاً بهینه برای سایز موبایل */
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+.menu-section {
+    background-color: rgba(31, 40, 51, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-color);
+    text-shadow: 0 0 5px rgba(255, 74, 74, 0.4);
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.item-name {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-main);
+}
+
+.item-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-shadow: var(--neon-glow);
+    white-space: nowrap;
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
