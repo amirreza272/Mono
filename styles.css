@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+:root {
+    --bg-color: #1a1a1a;
+    --card-bg: #262626;
+    --accent-color: #c5a880;
+    --text-color: #ffffff;
+    --text-muted: #aaaaaa;
+}
+body {
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=600') center/cover;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+header p {
+    margin: 10px 0 0;
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.category-title {
+    text-align: center;
+    color: var(--accent-color);
+    border-bottom: 1px dashed var(--accent-color);
+    padding-bottom: 10px;
+    margin: 40px 0 20px;
+    font-size: 1.5rem;
+}
+
+.menu-item {
+    background-color: var(--card-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-right: 4px solid var(--accent-color);
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: translateY(-2px);
+}
+
+.item-details h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.item-details p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.item-price {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
