@@ -147,6 +147,9 @@ footer {
     padding: 4px 8px;
     border-radius: 8px;
     line-height: 1;
+    display: inline-block;
+    unicode-bidi: plaintext;
+    direction: ltr;
 }
 
 .detail-title {
